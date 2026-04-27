@@ -1,0 +1,6 @@
+#e1(24Apr2026:14:33:10): source ./xcelium.d/env.d/env.history.24Apr2026_14_33_10
+s1(24Apr2026:14:33:10):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -access +rwc -logfile logs/run.log 
+#e2(24Apr2026:14:33:31): source ./xcelium.d/env.d/env.history.24Apr2026_14_33_31
+s2(24Apr2026:14:33:31):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -elaborate -logfile logs/compile.log 
+#e3(24Apr2026:14:35:42): source ./xcelium.d/env.d/env.history.24Apr2026_14_35_42
+s3(24Apr2026:14:35:42):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -elaborate -logfile logs/compile.log 

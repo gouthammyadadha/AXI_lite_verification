@@ -1,0 +1,67 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Apr 24, 2026 at 14:35:42 CEST
+xrun
+	-sv
+	rtl/*.sv
+	assertions/*.sv
+	tb/*.sv
+	-elaborate
+	-logfile logs/compile.log
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+Recompiling... reason: file './rtl/axi_lite_slave_ram.sv' is newer than expected.
+	expected: Fri Apr 24 10:46:00 2026
+	actual:   Fri Apr 24 14:34:57 2026
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xmvlog: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+file: rtl/axi_lite_slave_ram.sv
+	module worklib.axi_lite_slave_ram:sv
+		errors: 0, warnings: 0
+file: rtl/cpu_axi_master_fsm.sv
+	module worklib.cpu_axi_master_fsm:sv
+		errors: 0, warnings: 0
+file: rtl/top_axi_soc.sv
+	module worklib.top_axi_soc:sv
+		errors: 0, warnings: 0
+file: assertions/axi_abv.sv
+	module worklib.axi_abv:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xmelab: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_top
+	Building instance overlay tables: .................... Done
+	Generating native compiled code:
+xmvlog_cg: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+		worklib.axi_abv:sv <0x28df6f2d>
+			streams:  46, words: 26207
+		worklib.cpu_axi_master_fsm:sv <0x689e3f38>
+			streams:  15, words:  8137
+		worklib.tb_top:sv <0x13cdd1b4>
+			streams:  16, words: 12071
+		worklib.axi_lite_slave_ram:sv <0x205448d1>
+			streams:  15, words:  7608
+	Building instance specific data structures.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       5
+		Registers:              86      86
+		Scalar wires:           19       -
+		Vectored wires:          9       -
+		Always blocks:          39      39
+		Initial blocks:         19      19
+		Cont. assignments:       2       4
+		Pseudo assignments:      1       -
+		Assertions:             12      12
+		Covergroup Instances:    0       1
+		Process Clocks:         14       3
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_top:sv
+TOOL:	xrun(64)	24.03-s004: Exiting on Apr 24, 2026 at 14:35:42 CEST  (total: 00:00:00)

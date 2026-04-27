@@ -1,0 +1,26 @@
+#e1(24Apr2026:14:33:10): source ./xcelium.d/env.d/env.history.24Apr2026_14_33_10
+s1(24Apr2026:14:33:10):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -access +rwc -logfile logs/run.log 
+#e2(24Apr2026:14:33:31): source ./xcelium.d/env.d/env.history.24Apr2026_14_33_31
+s2(24Apr2026:14:33:31):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -elaborate -logfile logs/compile.log 
+#e3(24Apr2026:14:35:42): source ./xcelium.d/env.d/env.history.24Apr2026_14_35_42
+s3(24Apr2026:14:35:42):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -elaborate -logfile logs/compile.log 
+#e4(24Apr2026:14:35:48): source ./xcelium.d/env.d/env.history.24Apr2026_14_35_48
+s4(24Apr2026:14:35:48):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -access +rwc -logfile logs/run.log 
+#e5(24Apr2026:14:57:14): source ./xcelium.d/env.d/env.history.24Apr2026_14_57_14
+s5(24Apr2026:14:57:14):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -access +rwc -logfile logs/run.log 
+#e6(24Apr2026:15:00:44): source ./xcelium.d/env.d/env.history.24Apr2026_15_00_44
+s6(24Apr2026:15:00:44):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -access +rwc -coverage all -logfile logs/run.log 
+#e7(24Apr2026:15:03:10): source ./xcelium.d/env.d/env.history.24Apr2026_15_03_10
+s7(24Apr2026:15:03:10):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -coverage all -access +rwc -logfile logs/run.log 
+#e8(24Apr2026:15:05:54): source ./xcelium.d/env.d/env.history.24Apr2026_15_05_54
+s8(24Apr2026:15:05:54):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -coverage all -access +rwc -logfile logs/run.log 
+#e9(24Apr2026:15:10:28): source ./xcelium.d/env.d/env.history.24Apr2026_15_10_28
+s9(24Apr2026:15:10:28):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -coverage all -access +rwc -logfile logs/run.log 
+#e10(24Apr2026:15:14:17): source ./xcelium.d/env.d/env.history.24Apr2026_15_14_17
+s10(24Apr2026:15:14:17):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -coverage all -covoverwrite -access +rwc -logfile logs/run.log 
+#e11(24Apr2026:15:17:32): source ./xcelium.d/env.d/env.history.24Apr2026_15_17_32
+s11(24Apr2026:15:17:32):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -coverage all -covoverwrite -access +rwc -logfile logs/run.log 
+#e12(24Apr2026:15:19:53): source ./xcelium.d/env.d/env.history.24Apr2026_15_19_53
+s12(24Apr2026:15:19:53):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -coverage all -covoverwrite -access +rwc -logfile logs/run.log 
+#e13(24Apr2026:15:54:34): source ./xcelium.d/env.d/env.history.24Apr2026_15_54_34
+s13(24Apr2026:15:54:34):  xrun -sv rtl/*.sv assertions/*.sv tb/*.sv -coverage all -covoverwrite -access +rwc -logfile logs/run.log 

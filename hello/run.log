@@ -1,0 +1,108 @@
+xrun(64): 24.03-s004: (c) Copyright 1995-2024 Cadence Design Systems, Inc.
+TOOL:	xrun(64)	24.03-s004: Started on Apr 24, 2026 at 15:54:33 CEST
+xrun
+	-sv
+	rtl/*.sv
+	assertions/*.sv
+	tb/*.sv
+	-coverage all
+	-covoverwrite
+	-access +rwc
+	-logfile logs/run.log
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+Recompiling... reason: file './rtl/cpu_axi_master_fsm.sv' is newer than expected.
+	expected: Fri Apr 24 14:35:15 2026
+	actual:   Fri Apr 24 15:54:16 2026
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xmvlog: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+file: rtl/cpu_axi_master_fsm.sv
+	module worklib.cpu_axi_master_fsm:sv
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 1
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xrun: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+xmelab: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+		Caching library 'worklib' ....... Done
+	Elaborating the design hierarchy:
+	Top level design units:
+		tb_top
+
+	Extracting FSMs for coverage:
+		worklib.cpu_axi_master_fsm
+			FSM extracted for state register st
+		worklib.axi_lite_slave_ram
+		worklib.top_axi_soc
+		worklib.axi_abv
+		worklib.tb_top
+	Total FSMs extracted = 1
+	Building instance overlay tables: ................
+xmelab: *W,COVFDP: FSM description matching across instance of a module for "COVFDM" warning has been moved from elaboration to simulation dumping. To restore old matching behavior, use "set_backward_compat -COVFDM_during_elab". Also, it is recommended to use set_parameterized_module_coverage CCF command to avoid coverage loss due to FSM description difference across instances of a module.
+xmelab: *W,COVFHT: FSM hold transitions (transitions to the current state) are not extracted for any FSM in default mode.
+.... Done
+	Enabling instrumentation for coverage types: block expression FSM toggle functional
+xmelab: *W,COVDCL: By default expression coverage is scored only for Verilog logical operators (|| and &&) and VHDL logical operators (OR, AND, NOR, and NAND), and is scored only in condition expressions. To score coverage for other operators and for expressions in other statements, use the "set_expr_coverable_operators" and "set_expr_coverable_statements" coverage configuration file commands with suitable options at elaboration.
+	Generating native compiled code:
+xmvlog_cg: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+		worklib.cpu_axi_master_fsm:sv <0x0ed3ae8e>
+			streams:  16, words: 13802
+integer stall;
+            |
+xmelab: *W,COVUTA (./tb/tb_top.sv,10|12): Toggle coverage is not supported for SystemVerilog integer, real array, string, dynamic array, sparse memory and reference ports. It is also not supported for VHDL multi-dimensional array and array of record. There may also be other such objects in the design.
+reg [31:0] sb[0:15];
+            |
+xmelab: *W,COVMDD (./tb/tb_top.sv,18|12): Toggle coverage for bit, logic, reg, wire, enum and struct multi-dimensional static arrays and vectors is not supported by default. To enable toggle coverage for enum multi-dimensional static arrays specify 'set_toggle_scoring -sv_enum enable_mda' and for other multi-dimensional static arrays, specify 'set_toggle_scoring -sv_mda [<max_bit_base2_exponent>] [-sv_mda_of_struct]' ccf command in the coverage configuration file.
+	Building instance specific data structures.
+xmelab: *W,CGPIDF: Covergroup "per_instance" option , by default, is set as 0.
+xmelab: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+	Loading native compiled code:     .................... Done
+	Design hierarchy summary:
+		                 Instances  Unique
+		Modules:                 5       5
+		Registers:              86      86
+		Scalar wires:           19       -
+		Vectored wires:          9       -
+		Always blocks:          39      39
+		Initial blocks:         19      19
+		Cont. assignments:       2       4
+		Pseudo assignments:      3       -
+		Assertions:             12      12
+		Covergroup Instances:    0       1
+		Process Clocks:         14       2
+		Simulation timescale:  1ps
+	Writing initial simulation snapshot: worklib.tb_top:sv
+xmsim: *W,DLNCML: Multiple logical library mappings have been detected in the cds.lib. Directory used multiple times '/home/edastud/goutham_projects/project2_AXI_Lite_ABV/xcelium.d/worklib'.
+Loading snapshot worklib.tb_top:sv .................... Done
+SVSEED default: 1
+xcelium> source /eda/cadence/2024-25/RHELx86/XCELIUM_24.03.004/tools/xcelium/files/xmsimrc
+xcelium> run
+=========================================
+ AXI-Lite Professional Verification Start
+=========================================
+[SB_PASS] addr=0 data=00003000
+[SB_PASS] addr=1 data=00003001
+[SB_PASS] addr=2 data=00003002
+[SB_PASS] addr=3 data=00003003
+[SB_PASS] addr=4 data=00003004
+[SB_PASS] addr=5 data=00003005
+[SB_PASS] addr=6 data=00003006
+[SB_PASS] addr=7 data=00003007
+[FINAL_PASS]
+Scoreboard Pass=8 Fail=0
+Coverage=100.00 %
+Simulation complete via $finish(1) at time 755 NS + 0
+./tb/tb_top.sv:50  $finish;
+xcelium> exit
+xmsim: *N,COVCGN: Coverage configuration file command "set_covergroup -new_instance_reporting" can be specified to improve the scoping and naming of covergroup instances. It may be noted that subsequent merging of a coverage database saved with this command and a coverage database saved without this command is not allowed.
+
+coverage setup:
+  workdir  :  ./cov_work
+  dutinst  :  tb_top(tb_top)
+  scope    :  scope
+  testname :  test
+
+coverage files:
+  model(design data) :  ./cov_work/scope/icc_57e68f54_1de4f5f6.ucm
+  data               :  ./cov_work/scope/test/icc_57e68f54_1de4f5f6.ucd
+TOOL:	xrun(64)	24.03-s004: Exiting on Apr 24, 2026 at 15:54:35 CEST  (total: 00:00:02)
