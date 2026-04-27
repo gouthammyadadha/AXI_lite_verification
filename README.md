@@ -6,16 +6,14 @@ AMBA Protocol
 This project demonstrates the design and verification of an **AXI Lite (AMBA)** based communication system using **SystemVerilog**.  
 The system consists of:
 
-- **FSM Based CPU Master**
-- **AXI Lite Slave RAM**
-- **VALID / READY Handshake Communication**
-- **Assertion-Based Verification**
-- **TCL Automation Flow**
-- **Simulation using Cadence Xcelium (xrun)**
+**FSM Based CPU Master**
+**AXI Lite Slave RAM**
+**VALID / READY Handshake Communication**
+**Assertion-Based Verification**
+**TCL Automation Flow**
+**Simulation using Cadence Xcelium (xrun)**
 
 The main objective of this project was to understand how modern SoC components communicate using standard bus protocols instead of simple direct RAM interfaces.
-
----
 
 ## Why AXI Lite Instead of Normal RAM Interface?
 
@@ -44,8 +42,6 @@ AXI Lite uses separated communication channels with VALID/READY handshaking for 
 | AR | Read Address |
 | RDATA / RRESP | Read Data Response |
 
----
-
 ## Project Architecture
 
 CPU Master FSM generates:
@@ -61,8 +57,6 @@ Slave RAM handles:
 - Write Acceptance
 - Read Response
 - Protocol Response Signals
-
----
 
 ## Verification Features
 
@@ -80,8 +74,6 @@ Slave RAM handles:
 - Console Logs
 - Simulation History
 - Regression Runs
-
----
 
 ## TCL Automation Flow
 
